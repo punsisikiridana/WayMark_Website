@@ -1,12 +1,15 @@
 // Service Worker for WayMark Website
 // Provides offline functionality and caching
 
-const CACHE_NAME = 'waymark-v1';
+const CACHE_NAME = 'waymark-v2';
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/styles.css',
-    '/script.js',
+    'index.html',
+    'styles.css',
+    'script.js',
+    'manifest.json',
+    'waymark-logo.png',
+    'waymark.png',
+    'Sri-Lanka4.jpg',
     'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'
 ];

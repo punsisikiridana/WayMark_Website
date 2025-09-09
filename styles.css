@@ -1728,7 +1728,9 @@ body {
 
 /* Center layout for the Driving Permit section cards */
 .driving-permit-section .driving-rules-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 340px));
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     justify-content: center;
 }
 

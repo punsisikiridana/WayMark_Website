@@ -1735,7 +1735,8 @@ body {
 }
 
 .driving-permit-section .rule-card {
-    max-width: 340px;
+    width: 100%;
+    max-width: 480px;
     margin: 0 auto;
 }
 

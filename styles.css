@@ -484,7 +484,7 @@ body {
 /* Advanced Features Grid */
 .features-grid-advanced {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1rem;
 }
 
@@ -913,7 +913,7 @@ body {
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
@@ -964,7 +964,7 @@ body {
 
 .driving-rules-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
     margin-bottom: 2rem;
 }
@@ -1844,7 +1844,7 @@ body {
 
 .attractions-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
 }
 
@@ -2339,6 +2339,20 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .nav-container {
+        height: 60px;
+        padding: 0 16px;
+    }
+
+    .logo-image {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .header-image {
+        height: 32px;
+    }
+
     .hamburger {
         display: flex;
     }
@@ -2346,7 +2360,7 @@ body {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 60px;
         flex-direction: column;
         background-color: white;
         width: 100%;
@@ -2354,6 +2368,7 @@ body {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
+        gap: 1rem;
     }
 
     .hero-title {
@@ -2506,12 +2521,28 @@ body {
         font-size: 1.1rem;
     }
 
+    .home-hero-img {
+        object-fit: cover;
+    }
+
     .nav-menu.active {
         left: 0;
     }
 
     .nav-menu li {
-        margin: 1rem 0;
+        margin: 0.5rem 0;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .download-link {
+        position: static;
+        margin-top: 0.5rem;
+        align-self: flex-start;
     }
 
     .hero-container {
@@ -2598,12 +2629,40 @@ body {
 }
 
 @media (max-width: 480px) {
+    .nav-container {
+        height: 56px;
+    }
+
+    .logo-image {
+        height: 36px;
+    }
+
+    .header-image {
+        height: 28px;
+    }
+
+    .nav-menu {
+        top: 56px;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
 
     .section-header h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .hero-image-container {
+        height: 220px;
+    }
+
+    .hero-image-overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-image-overlay p {
+        font-size: 0.95rem;
     }
 
     .phone-mockup {

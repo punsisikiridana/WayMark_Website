@@ -1726,6 +1726,17 @@ body {
     gap: 2rem;
 }
 
+/* Center layout for the Driving Permit section cards */
+.driving-permit-section .driving-rules-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 340px));
+    justify-content: center;
+}
+
+.driving-permit-section .rule-card {
+    max-width: 340px;
+    margin: 0 auto;
+}
+
 .permit-option {
     background: white;
     padding: 2rem;
